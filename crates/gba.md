@@ -3,6 +3,7 @@
 * Alternatives:
     * Extern assembly
         * More overhead on not very fast processor
+    * Add an intrinsic for `swi` to `core::arch::{arm,aarch64}`.
 
 # Source
 
@@ -18,5 +19,3 @@ asm!(/* ASM */ "swi 0x06"
 ```
 
 And many more `swi` calls.
-
-Wants to make https://github.com/rust-console/gba/blob/35e9857dcc895053cad2ac7f02b984c0c4e97364/crt0.s#L1 inline.
